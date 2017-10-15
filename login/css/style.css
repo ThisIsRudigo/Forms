@@ -1,0 +1,16 @@
+form {
+  padding: 30px;
+}
+
+form .container {
+  padding: 10px;
+}
+
+form .container #email, form .container #pwd {
+  display: block;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+ 
+
+ /*# sourceMappingURL= style.css.map */
