@@ -8,15 +8,22 @@
   <title>Login</title>
 </head>
 <body>
-  <form action="18.220.175.109/account/login" method="post">
+  <form action="/" method="post">
     <div class="container">
       <label for="email">Email</label>
       <input type="email" name="email" id="email" required>
       <label for="password">Password</label>
       <input type="password" name="pwd" id="pwd" required>
 
-      <button type="submit">Submit</button>
+      <button type="submit" id="login">Submit</button>
     </div>
   </form>
+
+  <div id="result"></div>
+
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="login.js" type="text/javascript"></script>
+
 </body>
 </html>
