@@ -15,7 +15,7 @@
       <label for="password">Password</label>
       <input type="password" name="pwd" id="pwd" required>
 
-      <button type="submit" id="login">Submit</button>
+      <button type="submit" id="login" disabled>Submit</button>
     </div>
   </form>
 
@@ -23,43 +23,7 @@
 
 
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script>
-    $(document).ready(function(){
-
-        var url = "https://18.220.175.109/account/register/business";
-      
-        var data = { 
-          "email": $("#email").val(),
-          "password": $("#pwd").val(),
-          "name": "east of the sunrise IT Resources",
-          "businessType": "Infotech"
-        };
-      
-      console.log(typeof(data));
-      console.log(typeof(data.email));
-      console.log(typeof(data.password));
-
-          $("#login").click(function () {
-                $.ajax({
-                    type: "POST",
-                    url: url,
-                    dataType: "JSON",
-                    contentType: "application/json",
-                    data: data,
-                    success: function (res) {
-                        alert("successfully logged in");
-                    },
-                    error: function (res) {
-                      $("#email").html(res);
-                      alert(res.error);
-                      console.log(res.error);
-                    }
-
-                });
-            });
-    });
-    
-  </script>
+  <script src="login.js" type="text/javascript"></script>
 
 </body>
 </html>
