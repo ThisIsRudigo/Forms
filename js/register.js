@@ -38,6 +38,8 @@ $(document).ready(function(){
                     success: function (res) {
                         alert("successfully created an account");
                         $("#result").html(res);
+                        $("#pwd").css("border-bottom", "1px solid white");
+                        $(".alert").css("display", "none");
                     },
                     error: function (res) {
                       $("#email").html(res);

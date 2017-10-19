@@ -32,8 +32,9 @@ $(document).ready(function(){
                       dataType: 'json',
                       async: false,
                       success: function (res) {
-                          alert("successfully logged in");
                           $("#result").html(res);
+                          $("#pwd").css("border-bottom", "1px solid white");
+                          $(".alert").css("display", "none");
                       },
                       error: function (res) {
                         $("#email").html(res);
