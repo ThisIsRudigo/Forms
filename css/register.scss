@@ -1,0 +1,14 @@
+form {
+  padding: 30px;
+
+  .container {
+    padding: 10px;
+
+    #email, #pwd, #name, #type {
+      display: block;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
+  

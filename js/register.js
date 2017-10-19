@@ -1,13 +1,14 @@
 $(document).ready(function(){
   
-          var url = "http://18.220.175.109/account/login";
+          var url = "http://18.220.175.109/account/register/business";
   
-            $("#login").click(function () {
+            $("#register").click(function () {
 
               var data = { 
+                "name": $("#name").val(),
                 "email": $("#email").val(),
                 "password": $("#pwd").val(),
-                
+                "businessType": $("#type").val()
               };
 
 
@@ -19,7 +20,7 @@ $(document).ready(function(){
                       dataType: 'json',
                       async: false,
                       success: function (res) {
-                          alert("successfully logged in");
+                          alert("successfully created an account");
                           $("#result").html(res);
                       },
                       error: function (res) {
