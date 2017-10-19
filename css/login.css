@@ -32,56 +32,82 @@ form {
     color: black; }
 
 /* line 43, F:/Rudigo/Week 9/Forms/css/login.scss */
+.alert {
+  padding: 5px;
+  background-color: #f44336;
+  color: white;
+  display: none; }
+
+/* line 50, F:/Rudigo/Week 9/Forms/css/login.scss */
+.closebtn {
+  margin-left: 15px;
+  margin-top: -3px;
+  margin-right: 10px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s; }
+
+/* line 63, F:/Rudigo/Week 9/Forms/css/login.scss */
+.closebtn:hover {
+  color: black; }
+
+/* line 68, F:/Rudigo/Week 9/Forms/css/login.scss */
 .container {
   padding: 10px; }
 
-/* line 47, F:/Rudigo/Week 9/Forms/css/login.scss */
+/* line 72, F:/Rudigo/Week 9/Forms/css/login.scss */
 #email, #pwd, #name, #type {
   display: block;
   padding: 10px;
   margin-bottom: 15px; }
 
-/* line 53, F:/Rudigo/Week 9/Forms/css/login.scss */
+/* line 78, F:/Rudigo/Week 9/Forms/css/login.scss */
 input {
   background-color: transparent;
   border-bottom: 1px solid white;
   border-top: none;
   border-right: none;
   border-left: none;
+  color: white;
   transition: 5ms;
   font-family: 'Quicksand', sans-serif; }
 
-/* line 62, F:/Rudigo/Week 9/Forms/css/login.scss */
+/* line 88, F:/Rudigo/Week 9/Forms/css/login.scss */
 input::placeholder {
   font-size: 1.2em;
   font-family: 'Quicksand', sans-serif; }
 
-/* line 67, F:/Rudigo/Week 9/Forms/css/login.scss */
+/* line 93, F:/Rudigo/Week 9/Forms/css/login.scss */
 input:focus {
   outline: none;
   background-color: white;
+  color: black;
   transition: 5ms; }
-  /* line 71, F:/Rudigo/Week 9/Forms/css/login.scss */
+  /* line 98, F:/Rudigo/Week 9/Forms/css/login.scss */
   input:focus input::placeholder {
     color: black; }
 
-/* line 77, F:/Rudigo/Week 9/Forms/css/login.scss */
+/* line 104, F:/Rudigo/Week 9/Forms/css/login.scss */
 .btn {
   padding: 5px 40px;
   margin: 30px 0px;
   font-family: 'Quicksand', sans-serif; }
 
-/* line 85, F:/Rudigo/Week 9/Forms/css/login.scss */
+/* line 111, F:/Rudigo/Week 9/Forms/css/login.scss */
 a {
   color: white;
   text-decoration: underline; }
 
-/* line 89, F:/Rudigo/Week 9/Forms/css/login.scss */
+/* line 115, F:/Rudigo/Week 9/Forms/css/login.scss */
 a:hover {
   color: white;
   text-decoration: underline; }
 
-/* line 94, F:/Rudigo/Week 9/Forms/css/login.scss */
+/* line 120, F:/Rudigo/Week 9/Forms/css/login.scss */
 .bars {
   color: white; }
 

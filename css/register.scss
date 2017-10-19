@@ -39,6 +39,33 @@ form {
   }
 }
 
+
+.alert {
+  padding: 5px;
+  background-color: #f44336;
+  color: white;
+  display: none;
+}
+
+.closebtn {
+  margin-left: 15px;
+  margin-top: -3px;
+  margin-right: 10px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+
+
 .container {
   padding: 10px;
 }
@@ -56,6 +83,7 @@ input {
   border-right: none;
   border-left: none;
   transition: 5ms;
+  color: white;
   font-family: 'Quicksand', sans-serif;
 }
 input::placeholder {
@@ -65,6 +93,7 @@ input::placeholder {
 
 input:focus {
   outline: none;
+  color: black;
   background-color: white;
   transition: 5ms;
   input::placeholder {
@@ -79,6 +108,9 @@ input:focus {
   font-family: 'Quicksand', sans-serif;
 }
 
+.red {
+  border-bottom: 1px solid red;
+}
 
 
 a {

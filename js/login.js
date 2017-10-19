@@ -10,6 +10,20 @@ $(document).ready(function(){
               };
 
 
+              if ($("#pwd").val().length < 6) {
+                
+                    $("#pwd").css("border-bottom", "1px solid red");
+                    document.getElementById("pwd").focus();
+                    $(".alert").css("display", "block");
+              } else {
+
+                var data = { 
+                  "email": $("#email").val(),
+                  "password": $("#pwd").val()
+                };
+  
+
+
                   $.ajax({
                       url: url,
                       type: 'POST',
@@ -27,5 +41,8 @@ $(document).ready(function(){
                       }
   
                   });
-              });
+
+              }
+
       });
+});
