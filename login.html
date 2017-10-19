@@ -4,22 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">  
   <link rel="stylesheet" href="css/login.css">
   <title>Login</title>
 </head>
 <body>
-  <form action="../index.html" method="post">
-    <div class="container">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" required>
-      <label for="password">Password</label>
-      <input type="password" name="pwd" id="pwd" required>
+  
+  <div align="center" class="main">
 
-      <button type="submit" id="login">Submit</button>
-    </div>
-  </form>
+      <form action="#" method="post">
 
-  <div id="result"></div>
+          <p class="login-text">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-lock fa-stack-1x"></i>
+              </span>
+          </p>
+
+          <div class="container">
+            
+            <input type="email" name="email" id="email" placeholder="Email" required autofocus>
+
+            <input type="password" name="pwd" id="pwd" placeholder="Password" required>
+      
+            <button class="btn" type="submit" id="register">Login</button>
+          </div>
+        </form>
+
+        <a href="register.html">Forgot your password?</a> <span class="bars"> ------ </span> <a href="register.html">Don't have an account?</a>
+  </div>
 
 
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>

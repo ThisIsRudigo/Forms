@@ -1,16 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+/* line 4, F:/Rudigo/Week 9/Forms/css/register.scss */
+body {
+  background-image: -ms-linear-gradient(top, #262626 0%, #0D0D0D 46%, #0A0A0A 53%, #0D0D0D 100%);
+  background-image: -moz-linear-gradient(top, #262626 0%, #0D0D0D 46%, #0A0A0A 53%, #0D0D0D 100%);
+  background-image: -o-linear-gradient(top, #262626 0%, #0D0D0D 46%, #0A0A0A 53%, #0D0D0D 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #262626), color-stop(46, #0D0D0D), color-stop(53, #0A0A0A), color-stop(100, #0D0D0D));
+  background-image: -webkit-linear-gradient(top, #262626 0%, #0D0D0D 46%, #0A0A0A 53%, #0D0D0D 100%);
+  background-image: linear-gradient(to bottom, #262626 0%, #0D0D0D 46%, #0A0A0A 53%, #0D0D0D 100%);
+  font-family: 'Quicksand', sans-serif; }
+
+/* line 20, F:/Rudigo/Week 9/Forms/css/register.scss */
+.main {
+  margin: 0 auto;
+  height: 100vh; }
+
+/* line 25, F:/Rudigo/Week 9/Forms/css/register.scss */
 form {
-  padding: 30px;
-}
+  height: 90vh;
+  padding: 20px; }
 
-form .container {
-  padding: 10px;
-}
+/* line 30, F:/Rudigo/Week 9/Forms/css/register.scss */
+.login-text {
+  color: white;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  max-width: 50%;
+  padding: 2.5rem;
+  text-align: center; }
+  /* line 37, F:/Rudigo/Week 9/Forms/css/register.scss */
+  .login-text .fa-stack-1x {
+    color: black; }
 
-form .container #email, form .container #pwd, form .container #name, form .container #type {
+/* line 42, F:/Rudigo/Week 9/Forms/css/register.scss */
+.container {
+  padding: 10px; }
+
+/* line 46, F:/Rudigo/Week 9/Forms/css/register.scss */
+#email, #pwd, #name, #type {
   display: block;
   padding: 10px;
-  margin-bottom: 20px;
-}
- 
+  margin-bottom: 15px; }
 
- /*# sourceMappingURL= register.css.map */
+/* line 52, F:/Rudigo/Week 9/Forms/css/register.scss */
+input {
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  transition: 5ms;
+  font-family: 'Quicksand', sans-serif; }
+
+/* line 61, F:/Rudigo/Week 9/Forms/css/register.scss */
+input::placeholder {
+  font-size: 1.2em;
+  font-family: 'Quicksand', sans-serif; }
+
+/* line 66, F:/Rudigo/Week 9/Forms/css/register.scss */
+input:focus {
+  outline: none;
+  background-color: white;
+  transition: 5ms; }
+  /* line 70, F:/Rudigo/Week 9/Forms/css/register.scss */
+  input:focus input::placeholder {
+    color: black; }
+
+/* line 76, F:/Rudigo/Week 9/Forms/css/register.scss */
+.btn {
+  padding: 5px 40px;
+  margin: 30px 0px;
+  font-family: 'Quicksand', sans-serif; }
+
+/* line 84, F:/Rudigo/Week 9/Forms/css/register.scss */
+a {
+  color: white;
+  text-decoration: underline; }
+
+/* line 88, F:/Rudigo/Week 9/Forms/css/register.scss */
+a:hover {
+  color: white;
+  text-decoration: underline; }
+
+/*# sourceMappingURL=register.css.map */
