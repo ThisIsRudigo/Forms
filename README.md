@@ -7,9 +7,8 @@
 ## API call for rudigo portfolio
 
 
-###UPDATE
-Javascript stuff almost done... still wondering how to properly catch the error messages from the API and use it to display responses to the user before my freaking page refreshes or something.
+###This folder contains login and registration page for creating business account.
+Errors like incomplete characters for password sends a pop up alert to the user before the API is called in the login and registration pages
 
+Errors like incorrect password or email also sends a pop up to the user with an error message 
 -----------
-
-I'm still feeling sick but, codes are helping to take my mind off a lot of things.

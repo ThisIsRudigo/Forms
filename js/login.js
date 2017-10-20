@@ -17,6 +17,10 @@ $(document).ready(function(){
                     $(".alert").css("display", "block");
               } else {
 
+                $("#pwd").css("border-bottom", "1px solid white");
+                $(".alert").css("display", "none");
+
+
                 var data = { 
                   "email": $("#email").val(),
                   "password": $("#pwd").val()
@@ -35,10 +39,15 @@ $(document).ready(function(){
                           $("#result").html(res);
                           $("#pwd").css("border-bottom", "1px solid white");
                           $(".alert").css("display", "none");
+                          $("#alerted").css("display", "none");
+                          $("#alerte").css("display", "none");
                       },
                       error: function (res) {
-                        $("#email").html(res);
-                        alert(res.error);
+                        if (res.responseJSON.error == "No user account exists with that email"){
+                          $("#alerte").css("display", "block");
+                        } else if (res.responseJSON.error == "Password is incorrect"){
+                          $("#alerted").css("display", "block");
+                        }
                       }
   
                   });

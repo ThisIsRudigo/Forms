@@ -20,13 +20,21 @@
                 <i class="fa fa-lock fa-stack-1x"></i>
               </span>
           </p>
-
           
           <div class="alert">
               <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
               Password requires a minimum of 6 characters.
           </div>
 
+          <div id="alerted" style="padding: 5px; background-color: #f44336; color: white; display: none;">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            Password is incorrect
+          </div>
+
+          <div id="alerte" style="padding: 5px; background-color: #f44336; color: white; display: none;">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            No user account exists with that email
+          </div>
 
           <div class="container">
             
@@ -34,7 +42,7 @@
 
             <input type="password" name="pwd" id="pwd" placeholder="Password" required>
       
-            <button class="btn" type="button" id="login">Login</button>
+            <button class="btn" type="submit" id="login">Login</button>
           </div>
         </form>
 
